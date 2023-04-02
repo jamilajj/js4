@@ -25,15 +25,23 @@
 
 // }
 
-{
-    let arrNum = [0,1,2,3];
-    let n = 6;
-    let newArr=[];
+// 
+
+
+function nums(arr, n) {
+    for (let i = 0; i < n; i++) {
+      let nums = arr.slice(1,4);
+      let numplus = nums=a+b+c
+      arr.push(numplus);
+    }
+
+    return arr;
     
-        for( i=arrNum.length-3;i<=3;i++){
-            newArr+=arrNum[i];
-        }
-    
-    
-    console.log(newArr);
-}
+  }
+  
+  
+  
+  let arrNum = [0,1,2,3];
+  let n = 6;
+  let result = nums(arrNum, n);
+  console.log(numPlus(arrNum,n));
