@@ -30,18 +30,18 @@
 
 function nums(arr, n) {
     for (let i = 0; i < n; i++) {
-      let nums = arr.slice(1,4);
-      let numplus = nums=a+b+c
-      arr.push(numplus);
+      let nums = arr.slice(-3);
+      let sum=nums.reduce((a,b)=>a+b,0);
+      arr.push(sum);
     }
 
     return arr;
     
   }
   
-  
-  
   let arrNum = [0,1,2,3];
   let n = 6;
   let result = nums(arrNum, n);
-  console.log(numPlus(arrNum,n));
+  console.log(result);
+  
+ 
